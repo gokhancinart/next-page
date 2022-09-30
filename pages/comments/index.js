@@ -46,12 +46,12 @@ const comments = ({comments}) => {
           ))}
         </div>
       </div>
-      {showModal ? (
+      {/* {showModal ? (
         <div className={styles.modal}>
           <h3>Selamslar</h3>
-          {/* <button onClick={()=> setShowModal(false)}>Close Button</button> */}
+          <button onClick={()=> setShowModal(false)}>Close Button</button>
         </div>
-      ) : null }
+      ) : null } */}
     </div>
     </>
   );
