@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Sidebar from '../../components/Sidebar';
 import styles from '../../styles/Comments.module.css';
 
