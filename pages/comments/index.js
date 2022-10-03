@@ -1,5 +1,5 @@
 import Link from 'next/link';
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import Sidebar from '../../components/Sidebar';
 import styles from '../../styles/Comments.module.css';
 
@@ -15,9 +15,9 @@ export const getStaticProps = async () => {
 }
 
 const comments = ({comments}) => {
-  // const[showModal, setShowModal] = useState(false);
+  const[showModal, setShowModal] = useState(false);
 
-  // console.log(comments)
+  console.log(comments)
   return (
     <>
     <div className={styles.flex}>
@@ -37,8 +37,8 @@ const comments = ({comments}) => {
               )
             : //  if modal
             <div key={comment.id}> 
-              {/* <div className={styles.item} onClick={()=> setShowModal(true)}> */}
-              <div className={styles.item}>
+              <div className={styles.item} onClick={()=> setShowModal(true)}>
+              {/* <div className={styles.item}> */}
                 <div className={styles.photo}></div>
                 <p>{comment.userId} - {comment.title}</p>
               </div>
@@ -46,12 +46,12 @@ const comments = ({comments}) => {
           ))}
         </div>
       </div>
-      {/* {showModal ? (
+      {showModal ? (
         <div className={styles.modal}>
           <h3>Selamslar</h3>
           <button onClick={()=> setShowModal(false)}>Close Button</button>
         </div>
-      ) : null } */}
+      ) : null }
     </div>
     </>
   );
