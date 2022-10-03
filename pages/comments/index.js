@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
 
 }
 
-const comments = ({comments}) => {
+const Comments = ({comments}) => {
   const[showModal, setShowModal] = useState(false);
 
   console.log(comments)
@@ -57,4 +57,4 @@ const comments = ({comments}) => {
   );
 }
  
-export default comments;
+export default Comments;
