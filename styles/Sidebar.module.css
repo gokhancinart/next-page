@@ -11,4 +11,18 @@
 .sidebar a{
   display:grid;
   margin: 0 20px;
+  color:#949ba5;
+  font-size:14px;
+  font-weight:500;
+  font-family: 'Poppins';
+  transition: .3s ease color;
+}
+
+
+.sidebar a.active{
+  color:#cc171b;
+}
+
+.siderbar a:hover{
+  color:#cc171b;
 }

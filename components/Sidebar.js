@@ -1,16 +1,18 @@
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 import styles from '../styles/Sidebar.module.css';
 
 const Sidebar = ({comments}) => {
-  const MAX_LENGTH = 20;
+
+  const router = useRouter()
   return (
     <div className={styles.sidebar}>
-      <Link href={`/comments`}>
-        <a>Tümü</a>
+      <Link href={`/`}>
+        <a>Tümünü Göster</a>
       </Link>
       {comments.map(comment=>(
         <Link href={`/comments/${comment.id}`} key={comment.id}>
-          <a>{comment.title.substring(0, MAX_LENGTH)}</a>
+          <a className={router.asPath == `${`/comments/${comment.id}`}` ? styles.active : '' }>{comment.title}</a>
         </Link>
       ))}
     </div>
