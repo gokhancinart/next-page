@@ -98,25 +98,6 @@ footer {
   text-decoration:underline;
 }
 
-.box-title{
-  color: #fff;
-  background-color: #6b93d6;
-  border-radius:6px;
-  padding: 15px;
-  font-size: 13px;
-  margin: 0;
-  text-align:center;
-}
-
-.box-title .lesson {
-  font-size:12px;
-}
-
-.box-title .name {
-  font-size:14px;
-  font-weight:700;
-} 
-
 
 /* .plyr__menu{
   display:none!important;

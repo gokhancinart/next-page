@@ -10,7 +10,7 @@
 }
 
 .modal{
-  max-width: calc(100vw / 2);
+  max-width: calc(100vw / 4);
   position:fixed;
   left:50%;
   top:50%;

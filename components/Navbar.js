@@ -18,7 +18,7 @@ const Navbar = () => {
       {navLinks.map((link, index)=>{
         return(
           <Link href={link.path} key={index}>
-            <a className={router.asPath == `${link.path}` ? 'active' : '' }>{link.name}</a>
+            <a className={router.asPath == `${link.path}` ? '' : '' }>{link.name}</a>
           </Link>
         )
       })}

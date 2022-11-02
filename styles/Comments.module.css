@@ -1,3 +1,12 @@
+.pageTitle{
+  color:#1d252d;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  margin-top:0;
+  margin-bottom: 30px;
+}
+
 .flex {
   display:grid;
   grid-template-columns: minmax(260px, 1fr) 4fr;
@@ -8,24 +17,50 @@
   padding-left: 20px;
 }
 
-.flex .content .contentWrapperVideo{
-  display:grid;
-  grid-template-columns: repeat(2 , 1fr);
+.contentWrapperVideo{
+  display:flex;
   column-gap:20px;
   row-gap:20px;
   margin-bottom:30px;
 }
 
 
-.flex .content .contentWrapper{
-  display:grid;
-  grid-template-columns: repeat(3 , 1fr);
+.contentWrapper{
+  display:flex;
   column-gap:20px;
   row-gap:20px;
   margin-bottom:30px;
 }
 
-.flex .content .item{
+.contentWrapper .imgItem{
+  width:calc(100% / 3);
+}
+
+.contentWrapper .boxTitle{
+  color: #fff;
+  background-color: #6b93d6;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 15px;
+  font-size: 13px;
+  margin: 0;
+  text-align:center;
+}
+
+.contentWrapper .videoItem{
+  width:calc(100% / 2);
+}
+
+/* .contentWrapper .videoItem .boxTitle{
+  color: #5e6b79;
+  background-color: #fff;
+  font-size: 13px;
+  margin:15px 0 0 0;
+  cursor:pointer;
+} */
+
+.contentWrapper .item{
+  width:100%;
   display:block;
   font-size:12px;
   font-weight:500;
@@ -34,7 +69,28 @@
   background:#fff;
 }
 
-.flex .content .item img{
+.contentWrapper .item .boxTitle .lesson {
+  font-size:12px;
+}
+
+.contentWrapper .item .boxTitle .name {
+  font-size:14px;
+  font-weight:700;
+} 
+
+
+.contentWrapperVideo .item {
+  width:100%;
+  display:block;
+  font-size:12px;
+  font-weight:500;
+  border-radius:6px;
+  overflow:hidden;
+  background:#fff;
+  padding:20px;
+}
+
+.contentWrapper .item img, .contentWrapperVideo .item img{
   cursor:pointer;
   width: 100%;
   height: 300px;
@@ -42,10 +98,22 @@
   object-position: top;
 }
 
-.photoBlue{
-  width:100%;
-  height:240px;
-  background:blue;
-  border-radius: 6px;
-  box-shadow: 0px 0px 10px rgb(58 71 89 / 5%);
+.active{
+  color:red;
+}
+
+.text{
+  font-size:16px;
+  margin:30px 0;
+}
+
+.package{
+  width: 100%;
+  height: 300px;
+  font-size: 20px;
+  color: #fff;
+  background: #6b93d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
