@@ -4,7 +4,7 @@ import { navLinks } from '../utils/data';
 
 const Navbar = () => {
 
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <nav>

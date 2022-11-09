@@ -1,6 +1,6 @@
 export const navLinks = [
   {
     name: "Yorumlar & Başarılarımız",
-    path: "/",
+    path: "/comments",
   }
 ];
